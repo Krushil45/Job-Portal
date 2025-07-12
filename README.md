@@ -1,195 +1,112 @@
-# 💼 Job Portal App - Java Spring Boot with REST APIs, ReactJS, MongoDB
+# 💼 Job Portal App
 
-## 📌 Project Overview
-**Job Portal App** is a simple full-stack web application designed to help users browse job listings and create new job posts. It is built using **Java Spring Boot** for the backend, **ReactJS** for the frontend, and **MongoDB** for data persistence.
+<p align="center">
+  <img src="https://img.shields.io/badge/Frontend-React-blue?style=for-the-badge&logo=react" />
+  <img src="https://img.shields.io/badge/Backend-SpringBoot-brightgreen?style=for-the-badge&logo=springboot" />
+  <img src="https://img.shields.io/badge/Database-MongoDB-green?style=for-the-badge&logo=mongodb" />
+  <img src="https://img.shields.io/badge/Status-In%20Development-orange?style=for-the-badge&logo=progress" />
+</p>
 
-This project demonstrates how to create a modular and scalable application using a modern technology stack, implementing essential CRUD operations with pagination and keyword-based searching.
+> A full-stack Job Portal web application to browse, search, and post job listings with modern features like pagination and keyword filtering.
 
 ---
 
-## 🚀 Features
+## 🚀 Overview
 
-- 🔍 **Job Feed Page**: View all available job posts fetched from a local MongoDB database.
-- 🔎 **Search Functionality**: Filter job posts based on keywords like `Java`, `Python`, etc.
-- 📄 **Pagination**: Display 6 jobs per page with clickable page numbers for easy navigation.
-- 📝 **Create Job Post**: Submit new job listings through a form and store them in MongoDB.
+**Job Portal App** helps connect employers with job seekers through an intuitive platform. It demonstrates a real-world implementation of a CRUD-based full-stack app with a clean, scalable architecture.
+
+### 🧩 Core Features
+
+- 🔍 **Search Jobs** by keyword (e.g., Java, Python)
+- 📄 **Paginated Job Feed** (6 jobs per page)
+- 📝 **Post a New Job** via a form
+- 🌐 **RESTful API** with Swagger Documentation
+- ⚙️ **MongoDB Integration** for data storage
+- ❌ **404 Page** for invalid URLs
 
 ---
 
 ## 🛠️ Tech Stack
 
-### Backend
-- [Java Spring Boot](https://start.spring.io/)
-- Spring Web (REST APIs)
-- Spring Data MongoDB
-- Swagger-UI
-- Maven
-
-### Frontend
-- [ReactJS](https://reactjs.org/)
-- Axios for HTTP requests
-- React Router for navigation
-- TailwindCSS for styling
-
-### Database
-- [MongoDB](https://www.mongodb.com/) (running locally)
+| Layer         | Technologies Used                        |
+|---------------|-------------------------------------------|
+| 🖼 Frontend    | React.js, React Router, Axios, Tailwind CSS |
+| ⚙ Backend     | Java 17, Spring Boot, Spring Web, Swagger |
+| 🛢 Database    | MongoDB (local or Atlas)                 |
+| 🧪 Tools       | Postman, Git, IntelliJ, VSCode, Maven    |
 
 ---
 
-## 📸 Project Screenshots
+## 📸 Screenshots
 
-### 🏠 Home Page
-The Landing Page of the Job Portal Platform.
-![Home Page](https://github.com/Mahmud-Alam/spring-boot-job-portal-app/blob/main/screenshots/01.png)
-
-### 📝 Job Creating Form Page
-`POST` - Create a new job
-![Job Creating Form Page](https://github.com/Mahmud-Alam/spring-boot-job-portal-app/blob/main/screenshots/02.png)
-
-### 💼 Job Listings
-`GET` - All job posts Listing here.
-![Job Listings](https://github.com/Mahmud-Alam/spring-boot-job-portal-app/blob/main/screenshots/03.png)
-
-### 🔍 Search Job Post by Keyword  
-`GET` - Search job listings by entering a keyword related to title, description, or company.  
-![Search Job](https://github.com/Mahmud-Alam/spring-boot-job-portal-app/blob/main/screenshots/04.png)
-
-### 🧪 Swagger UI  
-A developer-friendly interface to test and explore all RESTful APIs.  
-Access via: `/swagger-ui.html`
-![Swagger UI](https://github.com/Mahmud-Alam/spring-boot-job-portal-app/blob/main/screenshots/05.png)
-
-### ❌ 404 - Not Found Page  
-Displays a user-friendly message when an invalid URL is visited.  
-![404 Page](https://github.com/Mahmud-Alam/spring-boot-job-portal-app/blob/main/screenshots/06.png)
+| Page | Preview |
+|------|---------|
+| 🏠 Home Page | ![Home](https://github.com/Mahmud-Alam/spring-boot-job-portal-app/blob/main/screenshots/01.png) |
+| 📝 Job Form | ![Create](https://github.com/Mahmud-Alam/spring-boot-job-portal-app/blob/main/screenshots/02.png) |
+| 💼 Job Listings | ![List](https://github.com/Mahmud-Alam/spring-boot-job-portal-app/blob/main/screenshots/03.png) |
+| 🔍 Search | ![Search](https://github.com/Mahmud-Alam/spring-boot-job-portal-app/blob/main/screenshots/04.png) |
+| 🧪 Swagger UI | ![Swagger](https://github.com/Mahmud-Alam/spring-boot-job-portal-app/blob/main/screenshots/05.png) |
+| ❌ 404 Page | ![404](https://github.com/Mahmud-Alam/spring-boot-job-portal-app/blob/main/screenshots/06.png) |
 
 ---
 
-## 🏗️ Project Structure
-### 🔙 Backend (Spring Boot)
+<details>
+<summary><strong>📥 Installation Guide</strong> (click to expand)</summary>
 
-```
-job-portal-backend/
-├── src
-│   ├── main
-│   │   ├── java
-│   │   │   └── com.mahmudalam.jobportal.spring_boot_job_portal_app
-│   │   │       ├── controller
-│   │   │       ├── interfaces
-│   │   │       ├── model
-│   │   │       └── SpringBootJobPortalAppApplication.java
-│   │   └── resources
-│   │       ├── application.properties
-│   │       ├── static/
-│   │       └── templates/
-│   └── test
-│       └── java
-│           └── com.mahmudalam.jobportal.spring_boot_job_portal_app
-├── .env
-└── pom.xml
+### 🔧 Prerequisites
 
-```
-
-### 🌐 Frontend (ReactJS)
-
-```
-job-portal-frontend/
- ├── public/
- ├── src/
- │   ├── api/
- │   ├── components/
- │   ├── pages/
- │   ├── App.jsx
- │   └── main.jsx 
- ├── package.json
-
-```
+- Java 17+
+- Node.js & npm
+- MongoDB (local or Atlas)
 
 ---
 
-## 🔧 Installation & Setup
-
-### 📌 Prerequisites
-Ensure you have the following installed:
-- **Java 17+**
-- **Node.js & npm**
-- **MongoDB installed locally or access to MongoDB Atlas**
-
-### 🔽 Backend Setup
+### 🔙 Backend Setup
 
 ```bash
-git clone https://github.com/Mahmud-Alam/spring-boot-job-portal-app.git
-cd spring-boot-job-portal-app
-cd backend
-```
+# Clone the repo
+git clone https://github.com/Krushil45/job-portal-app.git
+cd job-portal-app/backend
 
-The Spring Boot app will start at **[http://localhost:8080](http://localhost:8080)**
+---
 
+### ✏️ Edit your MongoDB config inside application.properties:
 
-#### 🧪 Configure Environment
-
-Edit `application.properties`:
-
-```properties
-spring.application.name=spring-boot-job-portal-app
+<properties>
+spring.application.name=job-portal
 spring.data.mongodb.uri=mongodb://localhost:27017/job_portal_db
 spring.data.mongodb.database=job_portal_db
-```
 
-### 🌐 Frontend Setup
+# Run the backend
+./mvnw spring-boot:run
+
+### 📍 Backend runs on: http://localhost:8080
+
+```
+🌐 Frontend Setup
 
 ```bash
-cd frontend
+cd ../frontend
 npm install
 npm run dev
-```
 
-The React app will start at **[http://localhost:5173](http://localhost:5173)**
+### 📍 Frontend runs on: http://localhost:5173
+```
+</details>
+
+# 💼 Job Portal API – Powered by Spring Boot
+
+## 📘 API Endpoints
+
+| Method | Endpoint              | Description                    |
+|--------|------------------------|--------------------------------|
+| GET    | `/job-posts`          | Fetch all job posts            |
+| GET    | `/job-posts/{text}`   | Search jobs by keyword         |
+| POST   | `/create-job-post`    | Create a new job post          |
 
 ---
 
-## 📘 API Documentation
-
-Once the application is running, Swagger UI can be accessed at:
-
-```
-http://localhost:8080/swagger-ui.html
-```
-
-It includes all endpoints, models, and schemas.
-
----
-
-## 🧪 Testing
-
-Run unit and integration tests using:
-
-```bash
-# Maven
-mvn test
-
-# Gradle
-./gradlew test
-```
-
----
-
-## 📜 API Endpoints
-
-### GET `/job-posts`
-### GET `/job-posts/{text}`
-
-* Fetch all jobs with optional keyword filtering and pagination.
-* Supports query parameters:
-
-  * `keyword`: Search term
-  * `page`: Page number (starting from 1)
-  * `limit`: Number of jobs per page (default: 6)
-
-### POST `/create-job-post`
-
-* Create a new job post
-* Accepts JSON payload:
+## 🔧 Sample Payload
 
 ```json
 {
@@ -202,38 +119,62 @@ mvn test
 
 ---
 
-## 🔮 Future Improvements
+### 🧪 Swagger Documentation
+You can access a full API interface via Swagger UI:
 
-* Add authentication (JWT-based)
-* Enable role-based access (Job Seeker vs Employer)
-* Add job details page
-* Improve form validation and error handling
-* Deploy on cloud (Render, vercel, or Heroku)
+http://localhost:8080/swagger-ui.html
+Includes:
 
----
+📄 Request/Response Schemas
 
-## 🤝 Contributing
+🧪 API Testing Interface
 
-Contributions are welcome! Please open an issue first to discuss what you would like to change.
-
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/NewFeature`)
-3. Commit your changes (`git commit -m 'Add some new Features'`)
-4. Push to the branch (`git push origin feature/NewFeature`)
-5. Open a Pull Request
+✅ Model Validations
 
 ---
 
-## 🏆 Author
-**Kapupara Krushil**  
-- 📧 Email: krusilkapupara456@gmail.com  
-- 🔗 **GitHub:** [GitHub](https://github.com/Krushil45)  
-- 🔗 **LinkedIn:** [LinkedIn](https://www.linkedin.com/in/krushil-kapupara/)  
+### 🔮 Future Improvements
+🔐 JWT-based Authentication
+
+👥 Role-based Access (Employer / Seeker)
+
+🧾 Job Detail Page with Apply Feature
+
+✅ Enhanced Validation & Error Messages
+
+☁️ Deployment on Render / Railway / Vercel
 
 ---
 
-## 🎉 Acknowledgments
-- Inspired by Job Portal platforms.
-- Thanks to the **Java Spring Boot Community** for extensive documentation and support.
+### 🤝 Contributing
+We welcome contributions of all kinds!
+How to contribute:
+# Fork the repository
+# Create a feature branch
+git checkout -b feature/NewFeature
 
-#### Happy coding! 🚀
+# Commit your changes
+git commit -m 'Add New Feature'
+
+# Push to GitHub
+git push origin feature/NewFeature
+
+# Open a Pull Request
+
+
+---
+
+### 👨‍💻 Author
+Kapupara Krushil
+📧 Email: krusilkapupara456@gmail.com
+🔗 GitHub: @Krushil45
+🔗 LinkedIn: krushil-kapupara
+
+---
+
+### 🙌 Acknowledgments
+Inspired by real-world job platforms
+
+Thanks to the open-source Spring Boot & React communities for their incredible tools and documentation
+
+“Connecting Minds, Building Futures.”
