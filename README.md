@@ -146,46 +146,33 @@ Includes:
 
 ---
 
-### 🤝 Contributing
-We welcome contributions of all kinds!
+## 📄 License
 
-How to contribute:
-  
-  Fork the repository
+This project is licensed under the **MIT License © 2025**
 
-Create a feature branch
-  
-  git checkout -b feature/NewFeature
-
-Commit your changes
-  
-  git commit -m 'Add New Feature'
-
-Push to GitHub
-  
-  git push origin feature/NewFeature
-
-Open a Pull Request
-
+> "Connecting Minds, Building Futures."
 
 ---
 
-### 👨‍💻 Author
+## 👤 Author
 
-Kapupara Krushil
-
-📧 Email: krusilkapupara456@gmail.com
-
-🔗 GitHub: @Krushil45
-
-🔗 LinkedIn: krushil-kapupara
-
+**Kapupara Krushil**  
+📧 Email: [krusilkapupara456@gmail.com](mailto:krusilkapupara456@gmail.com)  
+🔗 GitHub: [@Krushil45](https://github.com/Krushil45)  
+🔗 LinkedIn: [krushil-kapupara](https://www.linkedin.com/in/krushil-kapupara)
 
 ---
 
-### 🙌 Acknowledgments
-Inspired by real-world job platforms
+## 🤝 Contributions
 
-Thanks to the open-source Spring Boot & React communities for their incredible tools and documentation
+We welcome contributions of all types:
+💡 Ideas | 🐛 Bug Fixes | 📖 Docs | 💻 Code
 
-“Connecting Minds, Building Futures.”
+### To contribute:
+
+1. **Fork** this repository  
+2. **Create** a feature branch  
+3. **Make changes** and commit  
+4. **Submit** a Pull Request (PR)  
+
+Let’s build something impactful together! 🚀
