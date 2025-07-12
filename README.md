@@ -149,26 +149,31 @@ Includes:
 ### 🤝 Contributing
 We welcome contributions of all kinds!
 How to contribute:
-# Fork the repository
-# Create a feature branch
-git checkout -b feature/NewFeature
+  Fork the repository
 
-# Commit your changes
-git commit -m 'Add New Feature'
+Create a feature branch
+  git checkout -b feature/NewFeature
 
-# Push to GitHub
-git push origin feature/NewFeature
+Commit your changes
+  git commit -m 'Add New Feature'
 
-# Open a Pull Request
+Push to GitHub
+  git push origin feature/NewFeature
+
+Open a Pull Request
 
 
 ---
 
 ### 👨‍💻 Author
-Kapupara Krushil
+#Kapupara Krushil
+
 📧 Email: krusilkapupara456@gmail.com
+
 🔗 GitHub: @Krushil45
+
 🔗 LinkedIn: krushil-kapupara
+
 
 ---
 
