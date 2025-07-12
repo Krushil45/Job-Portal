@@ -4,7 +4,7 @@
   <img src="https://img.shields.io/badge/Frontend-React-blue?style=for-the-badge&logo=react" />
   <img src="https://img.shields.io/badge/Backend-SpringBoot-brightgreen?style=for-the-badge&logo=springboot" />
   <img src="https://img.shields.io/badge/Database-MongoDB-green?style=for-the-badge&logo=mongodb" />
-  <img src="https://img.shields.io/badge/Status-In%20Development-orange?style=for-the-badge&logo=progress" />
+  <img src="https://img.shields.io/badge/Status-%20Developed-orange?style=for-the-badge&logo=progress" />
 </p>
 
 > A full-stack Job Portal web application to browse, search, and post job listings with modern features like pagination and keyword filtering.
